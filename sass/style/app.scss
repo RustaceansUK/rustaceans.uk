@@ -1,0 +1,32 @@
+body, button {
+  font-family: "Austera Text", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#title {
+  margin: 0 0 0 6px;
+  font-weight: 800;
+  text-align: center;
+}
+
+#discord {
+  background-color: #5865F2;
+  color: #fff; 
+}
+
+.two-column-list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.muted {
+  color: #6a6a6a;
+}
+
+.centred {
+  text-align: center;
+}
+
+.small {
+  font-size: x-small;
+}

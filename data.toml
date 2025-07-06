@@ -1,0 +1,50 @@
+[[conferences]]
+name = "Rust Nation UK"
+location = "London"
+link = "https://www.rustnationuk.com/"
+
+[[companies]]
+name = "Arm"
+location = "Cambridge, Manchester"
+link = "https://arm.com"
+how = "Arm is [a platinum member of the Rust Foundation](https://rustfoundation.org/media/rust-foundation-announces-arm-as-a-platinum-member/), [write firmware in Rust](https://www.trustedfirmware.org/blog/rf-a-blog/) and contribute to Rust"
+
+[[courses]]
+institution = "University of Glasgow"
+name = "COMPSCI5119: Secure Systems Programming in Rust (M)"
+link = "https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI5119"
+
+[[meetups]]
+name = "Rust & Friends"
+location = "Edinburgh"
+link = "https://www.meetup.com/rust-edi/"
+
+[[meetups]]
+name = "Rust London User Group"
+location = "London"
+link = "https://www.meetup.com/rust-london-user-group/"
+
+[[meetups]]
+name = "Oxford Rust Meetup Group"
+location = "Oxford"
+link = "https://www.meetup.com/oxford-rust-meetup-group/"
+
+[[meetups]]
+name = "Cambridge Rust Meetup"
+location = "Cambridge"
+link = "https://www.meetup.com/cambridge-rust-meetup/"
+
+[[meetups]]
+name = "Rust Leeds Meetup"
+location = "Leeds"
+link = "https://www.eventbrite.com/e/rust-leeds-meetup-uniting-rustaceans-of-all-levels-tickets-818583203397"
+
+[[meetups]]
+name = "Rust and C++ Cardiff"
+location = "Cardiff"
+link = "https://www.meetup.com/rust-and-c-plus-plus-in-cardiff/"
+
+[[meetups]]
+name = "Rust Manchester"
+location = "Manchester"
+link = "https://www.meetup.com/rust-manchester/"

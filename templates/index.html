@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block header %}
+<nav>
+  <img src="./img/logo.svg" alt="{{ config.title }}" style="height: 250px;">
+  <h1 id="title">{{ config.title }}</h1>
+</nav>
+{% endblock header %}
+{% block main %}
+{% set data = load_data(path="data.toml") %}
+<p>
+  Whether you're an experienced Rust developer or just starting out,
+  <strong>{{ config.title }}</strong> is a place for Rust enthusiasts in the United Kingdom of all
+  levels to connect, collaborate, and share their passion for Rust.
+</p>
+<p class="centred">
+  <a href="{{ config.extra.discord_invite }}"><button id="discord">Join our Discord</button></a>
+</p>
+<h3>Conferences and meet-ups</h3>
+<p>
+  There are Rustaceans up-and-down the UK, whether you're in England, Scotland, Wales or Northern
+  Ireland, there's probably a Rust conference or meet-up near you. Joining a meetup or attending a
+  conference is a great way to connect with the Rust community, learn and grow:
+</p>
+<ul class="two-column-list">
+  {% for conference in data.conferences %}
+  <li>
+    <a href="{{ conference.link }}"><strong>{{ conference.name }}</strong></a><br/>
+    <span class="muted">Conference · {{ conference.location }}</span>
+  </li>
+  {% endfor %}
+  {% for meetup in data.meetups %}
+  <li>
+    <a href="{{ meetup.link }}"><strong>{{ meetup.name }}</strong></a><br/>
+    <span class="muted">Meet-up · {{ meetup.location }}</span>
+  </li>
+  {% endfor %}
+</ul>
+<p class="muted centred small">
+  Do you run a meet-up that isn't listed here?
+  <a href="{{ config.extra.repo_url }}">Send us a PR to add it here!</a>
+</p>
+<h3>Companies using Rust</h3>
+<p>
+  Rust is being adopted by companies all over the world and the UK is no exception. From network
+  services to websites, games to embedded devices, automotive to AI, Rust is being used in the UK:
+</p>
+<ul>
+  {% for company in data.companies %}
+  <li>
+    <a href="{{ company.link }}"><strong>{{ company.name }}</strong></a><br/>
+    <span class="muted">{{ company.location }}</span><br/>
+    {{ company.how | markdown() | safe }}
+  </li>
+  {% endfor %}
+</ul>
+<p class="muted centred small">
+  Does your company use Rust?
+  <a href="{{ config.extra.repo_url }}">Send us a PR to add it here!</a>
+</p>
+<h3>Universities and colleges teaching Rust</h3>
+<p>
+  Universities and colleges are starting to offer courses teaching Rust:
+</p>
+<ul>
+  {% for course in data.courses %}
+  <li>
+    <a href="{{ course.link }}"><strong>{{ course.name }}</strong></a><br/>
+    <span class="muted">{{ course.institution }}</span><br/>
+  </li>
+  {% endfor %}
+</ul>
+<p class="muted centred small">
+  Does your university use Rust?
+  <a href="{{ config.extra.repo_url }}">Send us a PR to add it here!</a>
+</p>
+{% endblock main %}
+{% block footer %}
+<nav>
+  <ul>
+    <li>
+      <small class="muted small">{{config.title }} is organised by
+      <a href="{{ config.extra.author_url }}">{{ config.author }}</a></small>
+    </li>
+  </ul>
+</nav>
+{% endblock footer %}
