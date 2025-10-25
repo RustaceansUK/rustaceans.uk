@@ -2,7 +2,7 @@ base_url = "https://rustaceans.uk"
 
 title = "Rustaceans UK"
 author = "David Wood"
-description = "Rust in the UK"
+description = "Whether you're an experienced Rust developer or just starting out, Rustaceans UK is a place for Rust enthusiasts in the United Kingdom of all levels to connect, collaborate, and share their passion for Rust."
 default_language = "en"
 
 compile_sass = true
