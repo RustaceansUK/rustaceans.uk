@@ -77,11 +77,9 @@
 {% endblock main %}
 {% block footer %}
 <nav>
-  <ul>
-    <li>
-      <small class="muted small">{{config.title }} is organised by
-      <a href="{{ config.extra.author_url }}">{{ config.author }}</a></small>
-    </li>
-  </ul>
+    <small class="muted small">
+      <a href="{{ config.extra.repo_url }}">GitHub</a> · {{config.title }} is organised by
+      <a href="{{ config.extra.author_url }}">{{ config.author }}</a>
+    </small>
 </nav>
 {% endblock footer %}
